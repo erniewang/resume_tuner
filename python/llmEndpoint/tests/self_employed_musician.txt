@@ -1,0 +1,8 @@
+[0] "Performed with Northwestern University Jazz Orchestra (2020–2024) and in a variety of university bands, featuring both live and virtual gigs."
+[1] "Utilized AI music generation tools (Musicfy, Udio) alongside custom scripts to explore digital composition and arrangement."
+[2] "Conducted private lessons, teaching saxophone/clarinet fundamentals and improvisational listening skills to a broad range of students."
+[3] "Developed custom Python scripts for MIDI manipulation and automated music arrangement using music21 library for compositional workflows."
+[4] "Created video content and tutorials for online music education platforms, reaching over 500 students across different skill levels."
+[5] "Collaborated with local recording studios to produce and engineer demo recordings for emerging artists and university music programs."
+[6] "Built personal brand through social media presence and live streaming performances, growing audience engagement by 200% over two years."
+[7] "Organized and led jazz masterclasses and workshops for high school music programs, focusing on improvisation and ensemble playing techniques."

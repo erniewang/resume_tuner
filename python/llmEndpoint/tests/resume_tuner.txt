@@ -1,0 +1,6 @@
+[0] Developed a desktop application that selects attributes of experiences and projects that best fit given a job description.
+[1] Built cross-platform Electron/React application with TailwindCSS for dynamic resume optimization.
+[2] Implemented an AI pipeline processing resume section by section while managing API rate limits.
+[3] Included a option keyword extration preprocessing storage to select relevant keywords to utilize in resume filtering.
+[4] Developed interactive suggestion review system in the UI with Accept/Reject/Edit options for each AI-generated resume improvement.
+[5] Developed plugin-based architecture supporting multiple AI providers with encrypted local storage and model version control.

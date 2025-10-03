@@ -1,0 +1,6 @@
+[0] "Designed and implemented a web application that video-captures poses and modifies a music loop using PoseNet (p5.js)"
+[1] "Engineered real-time tempo approximator that measures the rhythm of motion utilizing a FFT a velocity time series that pitch shifts, alter playbackrate, and changes the volume of the audio accordingly"
+[2] "Integrated with Vampnet that will continously generate new music based off the standard deviation over the range of motion"
+[3] "Utilized a Node server that recieves motion data from the browser via websocket emits to perform more intensive mathemticaly operations on the time series data"
+[4] "Developed a adjustable parameters such as normilization, and frames per second that allow the frontend application to adapt to the speed, height, and size of the dancer"
+[6] "Demoed the application at Evanston's BitCrush 2025 event, gauged user feedback and submitted plans for improvement"
