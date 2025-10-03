@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Ernie Wang's CV
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Ernie Wang's CV</h1>
+        <ul>
+        <li>Phone: +1 469 605 6000</li>
+        <li>Email: <a href="mailto:erniewang2025@u.northwestern.edu">erniewang2025@u.northwestern.edu</a></li>
+        <li>Location: Evanston, IL</li>
+        <li>Website: <a href="https://erniewang.com/">erniewang.com</a></li>
+        <li>GitHub: <a href="https://github.com/erniewang">erniewang</a></li>
+        </ul>
+        <h1>Education</h1>
+        <h2>Northwestern University, B.S. in Computer Science and Jazz Studies</h2>
+        <ul>
+        <li>Sept 2021 – June 2025</li>
+        <li>Evanston, IL</li>
+        <li>GPA: 3.61/4.0</li>
+        <li>Relevant Coursework: Data Structures &amp; Algorithms, Computer Architecture, Databases, Security, Information Systems, Machine Learning/AI, Operating Systems, Scalable Software Architecture, Distributed Systems</li>
+        </ul>
+        <h1>Technical Skills</h1>
+        <p>Languages: Python, JavaScript, TypeScript, C++, Racket, Java, Go</p>
+        <p>Frameworks/Tools: Git, Linux, XML, Flask, FastAPI, BeautifulSoup, NumPy, Pydantic, Pandas, Supabase, React, AWS, Node, MySQL, SQLite, NextJS, Tailwind, Electron, Puppeteer</p>
+        <p>Other: Finale, Logic Pro X, Adobe Photoshop, Final Cut Pro X, Musescore</p>
+        <h1>Work and Projects</h1>
+        <h2>Northwestern University - Computer Vision Developer, <em>Python</em>, <em>p5.js</em>, <em>PoseNet</em>, <em>Flask</em>, <em>Node.js</em></h2>
+        <ul>
+        <li>Mar 2025 – June 2025</li>
+        <li>Designed and implemented a web application that captures poses using PoseNet (p5.js) and a machine generation model (VampNet) to continuously generate music in response to video capture.</li>
+        <li>Engineered real-time tempo detection using FFT on joint velocity time-series, leveraging JavaScript math libraries for precision.</li>
+        <li>Developed adaptive frontend controls to modulate model inputs in near real time utilizing most recent pose data and music theory heuristics.</li>
+        </ul>
+        <h2>Harmonizer, <em>Python</em>, <em>JavaScript</em>, <em>HTML</em>, <em>CSS</em>, <em>XML</em>, <em>FastAPI</em>, <em>JSON</em></h2>
+        <ul>
+        <li>Nov 2024 – present</li>
+        <li>Developed a web application utilizing FastAPI, enabling musicians to upload melodies in MusicXML/MXL format and download modified XML files with melodies harmonized programmatically to the existing and custom harmonic rules.</li>
+        <li>Provided a heuristics modifier supporting thousands of note-chord combinations and common harmonization options</li>
+        <li>Stored user-defined presets in browser local storage, with future plans to server side storage</li>
+        <li>Conducted extensive test cases to handle edge cases, enabling a cyclical development process as new chords were added and encountered.</li>
+        <li>Implemented RESTful APIs to manage XML file exchange and streamline client-server communication.</li>
+        </ul>
+        <h2>Resume Tuner, <em>Python</em>, <em>JSON</em>, <em>HTTP</em>, <em>docx</em>, <em>Next.js</em>, <em>Tailwind CSS</em></h2>
+        <ul>
+        <li>Mar 2025 – present</li>
+        <li>Building a web application and browser extension that leverages the Gemini API to intelligently optimize resume sections and keywords based on job descriptions</li>
+        <li>Developed a Next.js backend using the App Router, with event handlers for resume updates, deployments, and LLM API integrations</li>
+        <li>Implemented a single-page application for resume editing using the docx library, along with a browser extension for seamless job description input</li>
+        </ul>
+        <h2>MuseCatalog, <em>Node.js</em>, <em>SQL</em>, <em>AWS-RDS</em>, <em>AWS-EC2</em>, <em>Spotify-API</em>, <em>ChatGPT-API</em></h2>
+        <ul>
+        <li>Mar 2023 – May 2023</li>
+        <li>Developed a music recommendation platform integrating OpenAI’s GPT API with the Spotify’s Web API, enabling dynamic playlist generation from natural language queries.</li>
+        <li>Implemented relational data persistence using Amazon RDS (MySQL), storing user accounts, playlists, and historical queries to enhance personalization</li>
+        <li>Deployed backend services on Amazon EC2, handling user authentication and API communication</li>
+        <li>Designed and documented a RESTful API with endpoints for song discovery, listing favorites, history, catalog reset, and recommendation refinement.</li>
+        </ul>
+        <h1>Other Experience</h1>
+        <h2>G2i, Engineer for AI Training Data</h2>
+        <ul>
+        <li>June 2024 – July 2024</li>
+        <li>Evaluated and ranked outputs from Scale AI’s LLM, offering detailed feedback on ethical considerations, language clarity, and visual coherence.</li>
+        <li>Ensured responses met factual accuracy standards to improve AI model performance and reliability.</li>
+        <li>Skills: <em>AI Training</em>, <em>Evaluation</em>, <em>Data Annotation</em></li>
+        </ul>
+        <h2>Self-Employed, Musician</h2>
+        <ul>
+        <li>Sept 2020 – present</li>
+        <li>Performed with Northwestern University Jazz Orchestra (2020–2024) and in a variety of university bands, featuring both live and virtual gigs.</li>
+        <li>Utilized AI music generation tools (Musicfy, Udio) alongside custom scripts to explore digital composition and arrangement.</li>
+        <li>Conducted private lessons, teaching saxophone/clarinet fundamentals and improvisational listening skills to a broad range of students.</li>
+        <li>Skills: <em>Performance</em>, <em>Jazz Improvisation</em>, <em>AI Music Tools</em>, <em>Teaching</em></li>
+        </ul>
+    </article>
+</body>
+
+</html>
