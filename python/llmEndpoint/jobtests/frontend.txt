@@ -1,0 +1,28 @@
+About the job
+Join our dynamic team as a Front End Software Engineer, where you will be instrumental in enhancing our digital platforms. This is a 100% remote opportunity for a 3-month contract, perfect for those who thrive in fast-paced, innovative environments.
+
+Responsibilities
+
+Refactor mobile and web applications, focusing on improving compliance with accessibility standards.
+Collaborate with cross-functional teams to ensure seamless integration of new features.
+Develop and maintain reusable UI components to enhance user experience.
+Conduct thorough testing to ensure code quality and functionality.
+Stay updated with the latest industry trends to ensure our applications remain cutting-edge.
+
+
+Skills
+
+Proficiency in Angular framework for developing robust applications.
+Strong understanding of web standards and HTML semantics for optimal performance.
+Advanced knowledge of WCAG 2.0 and ADA standards to ensure accessibility compliance.
+Experience with CSS and JavaScript to create responsive and engaging user interfaces.
+Ability to write and execute unit tests to maintain high code quality.
+
+
+Preferred Skills
+
+Familiarity with design systems and experience in guiding design practices.
+Knowledge of TypeScript and micro front-end architecture for scalable development.
+Experience in a Continuous Integration/Continuous Delivery environment to streamline workflows.
+Understanding of Agile methodologies to adapt to changing project requirements.
+Comfort with command-line tools and scripting for efficient development processes.

@@ -3,14 +3,12 @@ const path = require('path');
 var util = require("util");
 
 var spawn = require("child_process").spawn;
-var process = spawn('python',["python/test.py"]);
+var process = spawn('python',["renderPy/test.py"]);
 
 util.log('readingin')
 
 process.stdout.on('data',function(chunk:any){
-
     var textChunk = chunk.toString('utf8');// buffer to string
-
     util.log(textChunk);
 });
 
@@ -26,7 +24,6 @@ app.on('ready', () => {
     }
   });
 
-  // Automatically opens the dev tools when chromium opens
   win.webContents.openDevTools();
   win.loadFile(path.join(__dirname, 'index.html'));
 });

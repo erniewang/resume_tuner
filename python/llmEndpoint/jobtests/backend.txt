@@ -1,0 +1,31 @@
+Job Description
+
+As a Full Stack Developer, you'll be part of a collaborative team developing scalable, secure, and high-performance web applications using Python, Flask, Node.js, React, and other modern technologies. This is a great opportunity to gain hands-on experience on real-world, enterprise-level projects.
+🔧 Key Responsibilities:
+
+Develop and maintain full-stack web applications using Python, Flask, JavaScript, Node.js, React, etc.
+Write clean, reusable, and efficient code.
+Perform code reviews to ensure consistency and quality.
+Conduct testing to validate application functionality and reliability.
+Create and maintain technical documentation.
+Collaborate in an Agile team to meet sprint goals and project deadlines.
+Stay updated with the latest tools, libraries, and best practices.
+
+
+✅ Requirements:
+
+Proficiency in Python 3 and/or JavaScript (ES6)
+Understanding of OOP concepts and data structures
+Familiarity with the Software Development Life Cycle (SDLC)
+Basic knowledge of SQL and databases like MySQL, PostgreSQL, or MongoDB
+Experience using Git or other version control systems
+
+
+⭐ Preferred Qualifications:
+
+Master’s Degree in Computer Science, Software Engineering, or related field
+0–1 year of experience in Python development with Flask or Django
+0–1 year of experience in JavaScript development with React or Node.js
+Familiarity with RESTful API development
+Experience with frameworks like Flask, Express.js, or Django
+Exposure to AWS or other cloud services is a plus

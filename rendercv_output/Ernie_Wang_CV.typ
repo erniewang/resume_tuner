@@ -453,8 +453,8 @@
 #let connections-list = (
   [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Evanston, IL],
   [#box(original-link("mailto:erniewang2025@u.northwestern.edu")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)erniewang2025\@u.northwestern.edu])],
-  [#box(original-link("tel:+1-469-605-6000")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(469\) 605-6000])],
-  [#box(original-link("https://erniewang.com/")[#fa-icon("link", size: 0.9em) #h(0.05cm)erniewang.com])],
+  [#box(original-link("tel:+1-469-961-3315")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(469\) 961-3315])],
+  [#box(original-link("https://erniewang.com/erniewebpublic/")[#fa-icon("link", size: 0.9em) #h(0.05cm)erniewang.com\/erniewebpublic])],
   [#box(original-link("https://github.com/erniewang")[#fa-icon("github", size: 0.9em) #h(0.05cm)erniewang])],
 )
 #connections(connections-list)

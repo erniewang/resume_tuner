@@ -1,9 +1,9 @@
 # Ernie Wang's CV
 
-- Phone: +1 469 605 6000
+- Phone: +1 469 961 3315
 - Email: [erniewang2025@u.northwestern.edu](mailto:erniewang2025@u.northwestern.edu)
 - Location: Evanston, IL
-- Website: [erniewang.com](https://erniewang.com/)
+- Website: [erniewang.comerniewebpublic](https://erniewang.com/erniewebpublic/)
 - GitHub: [erniewang](https://github.com/erniewang)
 
 
