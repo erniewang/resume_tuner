@@ -1,16 +1,21 @@
 import re
 testMultiple = [[1,2,3,4], [2,3,4,5], [6,7,1,4], [1,2,0,4,5], [3,2,0,4,1], [5,1,0]]
+
 #testPath = "../../tests/harmonizer.txt"
 outputPath = "../../tempProj.yaml"
 aggPath = "../../aggregates.txt"
 answerPath = "../../boilderPlate.yaml"
 
+def read_and_split_projects(projectsPath):
+    """Helper function to read projects file and split by delimiter"""
+    with open(projectsPath, 'r') as file:
+        return file.read().split("핧")
+
 def assembleAllProjects(projectsPath, recomsList):
     assList = []
-    with open(projectsPath, 'r') as file:
-        projects = file.read().split("핧")
-        for i in range(len(recomsList)):
-            assList.append(assembleProject(projects[i], recomsList[i]))
+    projects = read_and_split_projects(projectsPath)
+    for i in range(len(recomsList)):
+        assList.append(assembleProject(projects[i], recomsList[i]))
     with open(answerPath, 'r') as file:
         content = file.read()
     for ass in assList:
