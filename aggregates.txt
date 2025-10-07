@@ -1,25 +1,28 @@
-[0] Designed and implemented a web application that video-captures poses and modifies a music loop using PoseNet (p5.js)
-[1] Engineered real-time tempo approximator that measures the rhythm of motion utilizing a FFT a velocity time series that pitch shifts, alter playbackrate, and changes the volume of the audio accordingly
-[2] Integrated with Vampnet that will continously generate new music based off the standard deviation over the range of motion
-[3] Utilized a Node server that recieves motion data from the browser via websocket emits to perform more intensive mathemticaly operations on the time series data
-[4] Developed a adjustable parameters such as normilization, and frames per second that allow the frontend application to adapt to the speed, height, and size of the dancer
+[0] Designed and implemented a browser application utilizing PoseNet(p5.js/m15) to caputure and analyze dance pases via a webcamera
+[1] Engineered real-time tempo approximator that measures the period of movement by running a FFT over the captured velocity data over a specified time interval
+[2] Established endpoints on an audio file's playbackrate, volume, and pitch that listen to tempo changes via websockets (Socket.io)
+[3] Integrated with a generative music model (Vampnet) to continously generate new music based off of select characteristics and patterns in captured posenet data
+[4] Architected a distributed software utilizing Node.js for reciving and inteperting data and Flask (python) to run the music generation model
+[5] Developed a adjustable parameters such as normilization, and frames per second that allow users on the frontend to change the sensitivieties of input and capture rate to match the dancer
 [6] Demoed the application at Evanston's BitCrush 2025 event, gauged user feedback and submitted plans for improvement
+[7] Performed linear interpolation and outlier filtering on captured posedata to smooth out and standardize approximated velocity, significantly improving consistency
 핧
-[0] Developed a web application utilizing FastAPI, enabling musicians to upload melodies in MusicXML/MXL format and download modified XML files with melodies harmonized programmatically to the existing and custom harmonic rules.
-[1] Provided a heuristics modifier supporting thousands of note-chord combinations and common harmonization options
-[2] Stored user-defined presets in browser local storage, with future plans to server side storage
-[3] Conducted extensive test cases to handle edge cases, enabling a cyclical development process as new chords were added and encountered.
+[0] Developed a web application enabling musicians to upload melodies in MusicXML/MXL format and download modified XML files with melodies harmonized programmatically into a musical soli
+[1] Provided a heuristics modifier based off of chorst structure from Music21 (python), supporting thousands of note-chord combinations and common harmonization options
+[2] Stored user-defined presets in browser local storage alongside a few well known haromization algorithms from well know arrangers(Count Basie, Stan Kenton, Thad Jones)
+[3] Conducted over 20 test cases to handle edge cases, ensuring program will continue to finish a task
 [4] Implemented RESTful APIs to manage XML and musicXML file exchange and streamline client-server communication.
-[5] Built a customizable fallback algorithm that harmonizes and writes for notes for notes that were missed in previous runs
-[6] Developed custom XML parser optimized for MusicXML format with error handling for malformed music files.
-[7] Lauched a website built with Flask that allows users to name and share their custom harmonization algorithms inspired by npm's package directory
+[5] Built a customizable fallback algorithm that harmonizes on a more consistent basis on note/harmony parings that were not successfull in the intial run
+[6] Improved runtime speed of music XML parsing/modifying programs 9 times by caching runtime results in a json file that is eventually stored on the users localStorage.
+[7] Launched and maintined a website that allows users to share their own custom made harmonization algorithms.
 핧
-[0] Developed a desktop application that selects attributes of experiences and projects that best fit given a job description.
-[1] Built cross-platform Electron/React application with TailwindCSS for dynamic resume optimization.
-[2] Implemented an AI pipeline processing resume section by section while managing API rate limits.
-[3] Included a option keyword extration preprocessing storage to select relevant keywords to utilize in resume filtering.
+[0] Developed a desktop application with Electron JS utilizes LLMS to select attributes of experiences and projects that best fit a job description
+[1] Designed a multipaged UI to create, modify, and save a megaresume utilizing Electron's IPC. 
+[2] Cut token usage nearly 50% by directing LLMs to reply with indexed outputs instead of echoing input context.
+[3] Developing a optional keyword extration preprocessing stage that selects keywords and verbs and "upgrades" them to match keywords of the job description
 [4] Developed interactive suggestion review system in the UI with Accept/Reject/Edit options for each AI-generated resume improvement.
-[5] Developed plugin-based architecture supporting multiple AI providers with encrypted local storage and model version control.
+[5] Developed plugin-based architecture supporting multiple AI providers with encrypted local storage utilizing node-keytar and model controll in the UI
+[6] Established a Resume/Job dictionary on the client's localstorage that details the exact optimized resume permuation for any given job
 핧
 [0] Developed a music recommendation platform integrating OpenAI's GPT API with the Spotify's Web API, enabling dynamic playlist generation from natural language queries.
 [1] Implemented relational data persistence using Amazon RDS (MySQL), storing user accounts, playlists, and historical queries to enhance personalization

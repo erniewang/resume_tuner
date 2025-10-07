@@ -7,8 +7,7 @@ from callGPT import askChat
 import ast
 from tqdm import tqdm
 
-testOptimized = [[1,2,3,4], [2,3,4,5], [6,7,1,4], [1,2,0,4,5], [3,2,0,4,1], [5,1,0]]
-
+#testOptimized = [[1,2,3,4], [2,3,4,5], [6,7,1,4], [1,2,0,4,5], [3,2,0,4,1], [5,1,0]]
 def optimize_resume(projPath, jobDesc, outputPath):
     optimizedIndicies = []
     rawProjects = read_and_split_projects(projPath)

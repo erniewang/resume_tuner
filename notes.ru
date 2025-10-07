@@ -106,3 +106,6 @@ Python Retardation File Paths:
     -> the open(thing) is seperate and use OS file paths. 
     -> python "whatever" makes python treat it as a standalone script. parent directory references,
     such as ".." dont work. 
+
+OS Path Join
+    -> builds a string that constructs a path. nothing is changed. it is nothing but a string builder
