@@ -1,8 +1,0 @@
-[0] "Developed a web application utilizing FastAPI, enabling musicians to upload melodies in MusicXML/MXL format and download modified XML files with melodies harmonized programmatically to the existing and custom harmonic rules."
-[1] "Provided a heuristics modifier supporting thousands of note-chord combinations and common harmonization options"
-[2] "Stored user-defined presets in browser local storage, with future plans to server side storage"
-[3] "Conducted extensive test cases to handle edge cases, enabling a cyclical development process as new chords were added and encountered."
-[4] "Implemented RESTful APIs to manage XML and musicXML file exchange and streamline client-server communication."
-[5] "Built a customizable fallback algorithm that harmonizes and writes for notes for notes that were missed in previous runs"
-[6] "Developed custom XML parser optimized for MusicXML format with error handling for malformed music files."
-[7] "Lauched a website built with Flask that allows users to name and share their custom harmonization algorithms inspired by npm's package directory"

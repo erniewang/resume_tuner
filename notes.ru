@@ -97,3 +97,12 @@ Buffering
 Enviroment Variablees
     -> frequently need to be manually loaded in. '.env'. this is for security, predictablilty, 
     and isolation.
+
+10/6
+
+Python Retardation File Paths:
+    -> from ..directory.file import thing, or from .sister import thing. this 
+    shit only works in packages (which have __init__ .py). only for modules
+    -> the open(thing) is seperate and use OS file paths. 
+    -> python "whatever" makes python treat it as a standalone script. parent directory references,
+    such as ".." dont work. 

@@ -486,7 +486,7 @@ Sept 2021 – June 2025
 #one-col-entry(
   content: [Languages: Python, JavaScript, TypeScript, C++, Racket, Java, Go
 
-Frameworks\/Tools: Git, Linux, XML, Flask, FastAPI, BeautifulSoup, NumPy, Pydantic, Pandas, Supabase, React, AWS, Node, MySQL, SQLite, NextJS, Tailwind, Electron, Puppeteer
+Frameworks\/Tools: Git, Linux, XML, Flask, FastAPI, BeautifulSoup, NumPy, Pydantic, Pandas, Supabase, React, AWS, Node, MySQL, SQLite, NextJS, Tailwind, Electron, Puppeteer, Selenium
 
 Other: Finale, Logic Pro X, Adobe Photoshop, Final Cut Pro X, Musescore]
 )
@@ -505,7 +505,7 @@ Other: Finale, Logic Pro X, Adobe Photoshop, Final Cut Pro X, Musescore]
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Designed and implemented a web application that captures poses using PoseNet \(p5.js\) and a machine generation model \(VampNet\) to continuously generate music in response to video capture.],[Engineered real-time tempo detection using FFT on joint velocity time-series, leveraging JavaScript math libraries for precision.],[Developed adaptive frontend controls to modulate model inputs in near real time utilizing most recent pose data and music theory heuristics.],)
+    #v(design-highlights-top-margin);#highlights([Designed and implemented a web application that video-captures poses and modifies a music loop using PoseNet \(p5.js\)],[Engineered real-time tempo approximator that measures the rhythm of motion utilizing a FFT a velocity time series that pitch shifts, alter playbackrate, and changes the volume of the audio accordingly],[Integrated with Vampnet that will continously generate new music based off the standard deviation over the range of motion],[Utilized a Node server that recieves motion data from the browser via websocket emits to perform more intensive mathemticaly operations on the time series data],[Developed a adjustable parameters such as normilization, and frames per second that allow the frontend application to adapt to the speed, height, and size of the dancer],)
   ],
 )
 
@@ -520,7 +520,7 @@ Other: Finale, Logic Pro X, Adobe Photoshop, Final Cut Pro X, Musescore]
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Developed a web application utilizing FastAPI, enabling musicians to upload melodies in MusicXML\/MXL format and download modified XML files with melodies harmonized programmatically to the existing and custom harmonic rules.],[Provided a heuristics modifier supporting thousands of note-chord combinations and common harmonization options],[Stored user-defined presets in browser local storage, with future plans to server side storage],[Conducted extensive test cases to handle edge cases, enabling a cyclical development process as new chords were added and encountered.],[Implemented RESTful APIs to manage XML file exchange and streamline client-server communication.],)
+    #v(design-highlights-top-margin);#highlights([Conducted extensive test cases to handle edge cases, enabling a cyclical development process as new chords were added and encountered.],[Developed custom XML parser optimized for MusicXML format with error handling for malformed music files.],[Stored user-defined presets in browser local storage, with future plans to server side storage],[Built a customizable fallback algorithm that harmonizes and writes for notes for notes that were missed in previous runs],)
   ],
 )
 
@@ -535,7 +535,7 @@ Other: Finale, Logic Pro X, Adobe Photoshop, Final Cut Pro X, Musescore]
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Building a web application and browser extension that leverages the Gemini API to intelligently optimize resume sections and keywords based on job descriptions],[Developed a Next.js backend using the App Router, with event handlers for resume updates, deployments, and LLM API integrations],[Implemented a single-page application for resume editing using the docx library, along with a browser extension for seamless job description input],)
+    #v(design-highlights-top-margin);#highlights([Developed a desktop application that selects attributes of experiences and projects that best fit given a job description.],[Built cross-platform Electron\/React application with TailwindCSS for dynamic resume optimization.],[Implemented an AI pipeline processing resume section by section while managing API rate limits.],[Included a option keyword extration preprocessing storage to select relevant keywords to utilize in resume filtering.],[Developed interactive suggestion review system in the UI with Accept\/Reject\/Edit options for each AI-generated resume improvement.],)
   ],
 )
 
@@ -550,7 +550,7 @@ Other: Finale, Logic Pro X, Adobe Photoshop, Final Cut Pro X, Musescore]
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Developed a music recommendation platform integrating OpenAI’s GPT API with the Spotify’s Web API, enabling dynamic playlist generation from natural language queries.],[Implemented relational data persistence using Amazon RDS \(MySQL\), storing user accounts, playlists, and historical queries to enhance personalization],[Deployed backend services on Amazon EC2, handling user authentication and API communication],[Designed and documented a RESTful API with endpoints for song discovery, listing favorites, history, catalog reset, and recommendation refinement.],)
+    #v(design-highlights-top-margin);#highlights([Deployed backend services on Amazon EC2, handling user authentication and API communication],[Developed a music recommendation platform integrating OpenAI's GPT API with the Spotify's Web API, enabling dynamic playlist generation from natural language queries.],[Implemented relational data persistence using Amazon RDS \(MySQL\), storing user accounts, playlists, and historical queries to enhance personalization],[Built sentiment analysis pipeline using OpenAI embeddings to categorize user music preferences and mood-based recommendations.],[Created Redis caching layer to optimize API response times and reduce external API calls by 60\%.],)
   ],
 )
 
@@ -569,7 +569,7 @@ Other: Finale, Logic Pro X, Adobe Photoshop, Final Cut Pro X, Musescore]
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Evaluated and ranked outputs from Scale AI’s LLM, offering detailed feedback on ethical considerations, language clarity, and visual coherence.],[Ensured responses met factual accuracy standards to improve AI model performance and reliability.],[Skills: #emph[AI Training], #emph[Evaluation], #emph[Data Annotation]],)
+    #v(design-highlights-top-margin);#highlights([Collaborated with cross-functional teams to identify bias patterns and recommend model training improvements for better ethical alignment.],[Analyzed statistical trends in AI output quality using Python data analysis tools to provide actionable insights for model optimization.],[Created detailed annotation guidelines and training materials for new evaluators to maintain consistency in AI training data quality.],)
   ],
 )
 
@@ -584,7 +584,7 @@ Other: Finale, Logic Pro X, Adobe Photoshop, Final Cut Pro X, Musescore]
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Performed with Northwestern University Jazz Orchestra \(2020–2024\) and in a variety of university bands, featuring both live and virtual gigs.],[Utilized AI music generation tools \(Musicfy, Udio\) alongside custom scripts to explore digital composition and arrangement.],[Conducted private lessons, teaching saxophone\/clarinet fundamentals and improvisational listening skills to a broad range of students.],[Skills: #emph[Performance], #emph[Jazz Improvisation], #emph[AI Music Tools], #emph[Teaching]],)
+    #v(design-highlights-top-margin);#highlights([Performed with Northwestern University Jazz Orchestra \(2020–2024\) and in a variety of university bands, featuring both live and virtual gigs.],[Conducted private lessons, teaching saxophone\/clarinet fundamentals and improvisational listening skills to a broad range of students.],[Developed custom Python scripts for MIDI manipulation and automated music arrangement using music21 library for compositional workflows.],[Created video content and tutorials for online music education platforms, reaching over 500 students across different skill levels.],[Built personal brand through social media presence and live streaming performances, growing audience engagement by 200\% over two years.],)
   ],
 )
 
