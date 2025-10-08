@@ -17,7 +17,7 @@
 [7] Launched and maintined a website that allows users to share their own custom made harmonization algorithms.
 핧
 [0] Developed a desktop application with Electron JS utilizes LLMS to select attributes of experiences and projects that best fit a job description
-[1] Designed a multipaged UI to create, modify, and save a megaresume utilizing Electron's IPC. 
+[1] Designed a multipaged UI to create, modify, and save a megaresume utilizing Electron's IPC utilizing React and TailwindCSS
 [2] Cut token usage nearly 50% by directing LLMs to reply with indexed outputs instead of echoing input context.
 [3] Developing a optional keyword extration preprocessing stage that selects keywords and verbs and "upgrades" them to match keywords of the job description
 [4] Developed interactive suggestion review system in the UI with Accept/Reject/Edit options for each AI-generated resume improvement.

@@ -109,3 +109,22 @@ Python Retardation File Paths:
 
 OS Path Join
     -> builds a string that constructs a path. nothing is changed. it is nothing but a string builder
+
+AWS Basic Services:
+    
+    - CloudFormation: package.json but for AWS in YAML format
+
+    Networking: "Route 53", "Elastic Load Balancer", "VPC" (small instances of aws cloud)
+    Subnet: A part of a aws plication that can be open internet or closed
+    Computing: EC2, ECS (container and simpler) Lambda (endpoint that exists for tasks and dies after)
+    Storage: S3 (storage large shit), CloudFront (cdn), RDS, DynamoDB (noSQL)
+    Security: IAM (identies and permissions for all, [us ers, groups, roles, policies])
+    principle of least privilege. Cloudtrail (record everything)
+    AI: SageMaker (training and deploying models) Bedrock (pretrained models)
+
+AWS Project Structure
+    aws componets: EC2, RDS, IAM, 
+    User Flow
+        -> authentication -> prompt -> callGPT api -> spotify api
+        -> save in rds
+
