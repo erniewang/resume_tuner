@@ -16,13 +16,13 @@ def askChat(proj, jobDesc):
     result = client.responses.create(
         model="gpt-5-nano",
         input=prompt + proj + "\n Job Description:" + jobDesc,
-        reasoning={ "effort": "low" },
+        reasoning={ "effort": "medium" },
         text={ "verbosity": "low" },
     )
     #print(json.dumps(result.model_dump(), indent=2))
     print(f"\nTotal tokens used: {result.usage.total_tokens}")
     return result.output_text
-
+    
 if __name__ == "__main__":
     with open('../tests/harmonizer.txt', 'r') as file:
         testProject = file.read()

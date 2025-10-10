@@ -10,43 +10,15 @@
 [0] Developed a web application enabling musicians to upload melodies in MusicXML/MXL format and download modified XML files with melodies harmonized programmatically into a musical soli
 [1] Provided a heuristics modifier based off of chorst structure from Music21 (python), supporting thousands of note-chord combinations and common harmonization options
 [2] Stored user-defined presets in browser local storage alongside a few well known haromization algorithms from well know arrangers(Count Basie, Stan Kenton, Thad Jones)
-[3] Conducted over 20 test cases to handle edge cases, ensuring program will continue to finish a task
-[4] Implemented RESTful APIs to manage XML and musicXML file exchange and streamline client-server communication.
-[5] Built a customizable fallback algorithm that harmonizes on a more consistent basis on note/harmony parings that were not successfull in the intial run
-[6] Improved runtime speed of music XML parsing/modifying programs 9 times by caching runtime results in a json file that is eventually stored on the users localStorage.
-[7] Launched and maintined a website that allows users to share their own custom made harmonization algorithms.
+[3] Implemented RESTful APIs to manage XML and musicXML file exchange and streamline client-server communication.
+[4] Built a customizable fallback algorithm that harmonizes on a more consistent basis on note/harmony parings that were not successfull in the intial run
+[5] Improved runtime speed of music XML parsing/modifying programs 9 times by caching runtime results in a json file that is eventually stored on the users localStorage.
+[6] Launched and maintined a website that allows users to share their own custom made harmonization algorithms.
 핧
 [0] Developed a desktop application with Electron JS utilizes LLMS to select attributes of experiences and projects that best fit a job description
 [1] Designed a multipaged UI to create, modify, and save a megaresume utilizing Electron's IPC utilizing React and TailwindCSS
 [2] Cut token usage nearly 50% by directing LLMs to reply with indexed outputs instead of echoing input context.
-[3] Developing a optional keyword extration preprocessing stage that selects keywords and verbs and "upgrades" them to match keywords of the job description
+[3] Developing a optional keyword extration preprocessing stage that selects keywords and verbs and `upgrades` them to match keywords of the job description
 [4] Developed interactive suggestion review system in the UI with Accept/Reject/Edit options for each AI-generated resume improvement.
 [5] Developed plugin-based architecture supporting multiple AI providers with encrypted local storage utilizing node-keytar and model controll in the UI
 [6] Established a Resume/Job dictionary on the client's localstorage that details the exact optimized resume permuation for any given job
-핧
-[0] Developed a music recommendation platform integrating OpenAI's GPT API with the Spotify's Web API, enabling dynamic playlist generation from natural language queries.
-[1] Implemented relational data persistence using Amazon RDS (MySQL), storing user accounts, playlists, and historical queries to enhance personalization
-[2] Deployed backend services on Amazon EC2, handling user authentication and API communication
-[3] Designed and documented a RESTful API with endpoints for song discovery, listing favorites, history, catalog reset, and recommendation refinement.
-[4] Built sentiment analysis pipeline using OpenAI embeddings to categorize user music preferences and mood-based recommendations.
-[5] Implemented OAuth 2.0 integration with Spotify for secure user authentication and playlist management permissions.
-[6] Created Redis caching layer to optimize API response times and reduce external API calls by 60%.
-[7] Developed Node.js middleware for rate limiting and error handling to ensure stable service performance under high load.
-[8] Built comprehensive logging system using Winston to track user interactions and API performance metrics for analytics.
-핧
-[0] Evaluated and ranked outputs from Scale AI's LLM, offering detailed feedback on ethical considerations, language clarity, and visual coherence.
-[1] Ensured responses met factual accuracy standards to improve AI model performance and reliability.
-[2] Developed comprehensive evaluation rubrics and scoring systems to standardize assessment of AI-generated content across multiple domains.
-[3] Collaborated with cross-functional teams to identify bias patterns and recommend model training improvements for better ethical alignment.
-[4] Analyzed statistical trends in AI output quality using Python data analysis tools to provide actionable insights for model optimization.
-[5] Created detailed annotation guidelines and training materials for new evaluators to maintain consistency in AI training data quality.
-[6] Performed comparative analysis between different AI model versions to track improvement metrics and performance degradation patterns.
-핧
-[0] Performed with Northwestern University Jazz Orchestra (2020–2024) and in a variety of university bands, featuring both live and virtual gigs.
-[1] Utilized AI music generation tools (Musicfy, Udio) alongside custom scripts to explore digital composition and arrangement.
-[2] Conducted private lessons, teaching saxophone/clarinet fundamentals and improvisational listening skills to a broad range of students.
-[3] Developed custom Python scripts for MIDI manipulation and automated music arrangement using music21 library for compositional workflows.
-[4] Created video content and tutorials for online music education platforms, reaching over 500 students across different skill levels.
-[5] Collaborated with local recording studios to produce and engineer demo recordings for emerging artists and university music programs.
-[6] Built personal brand through social media presence and live streaming performances, growing audience engagement by 200% over two years.
-[7] Organized and led jazz masterclasses and workshops for high school music programs, focusing on improvisation and ensemble playing techniques.

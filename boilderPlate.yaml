@@ -46,20 +46,29 @@ cv:
         position: "*Node.js*, *SQL*, *AWS-RDS*, *AWS-EC2*, *Spotify-API*, *ChatGPT-API*"
         start_date: 2023-03
         end_date: 2023-05
-        {}
+        highlights:
+          - "Developed a music recommendation platform integrating OpenAI’s GPT API with the Spotify’s Web API, enabling dynamic playlist generation from natural language queries."
+          - "Implemented relational data persistence using Amazon RDS (MySQL), storing user accounts, playlists, and historical queries to enhance personalization"
+          - "Deployed backend services on Amazon EC2, handling user authentication and API communication"
+          - "Designed and documented a RESTful API with endpoints for song discovery, listing favorites, history, catalog reset, and recommendation refinement."
 
     Other Experience:
       - company: G2i
         position: Engineer for AI Training Data
         start_date: 2024-06
         end_date: 2024-07
-        {}
+        highlights:
+          - "Evaluated and ranked outputs from Scale AI's LLM, offering detailed feedback on ethical considerations, language clarity, and visual coherence."
+          - "Ensured responses met factual accuracy standards to improve AI model performance and reliability."
 
       - company: Self-Employed
         position: Musician
         start_date: 2020-09
         end_date: present
-        {}
+        highlights:
+        - "Performed with Northwestern University Jazz Orchestra (2020–2024) and in a variety of university bands, featuring both live and virtual gigs."
+        - "Utilized AI music generation tools (Musicfy, Udio) alongside custom scripts to explore digital composition and arrangement."
+        - "Conducted private lessons, teaching saxophone/clarinet fundamentals and improvisational listening skills to a broad range of students."
 
 design:
   theme: tighterthanyourmom

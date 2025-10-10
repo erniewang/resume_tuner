@@ -12,6 +12,9 @@ def read_and_split_projects(projectsPath):
         return file.read().split("핧")
 
 def assembleAllProjects(projectsPath, recomsList, outputPath):
+    #partial filter
+    recomsList = recomsList[:3]
+
     assList = []
     projects = read_and_split_projects(projectsPath)
     for i in range(len(recomsList)):

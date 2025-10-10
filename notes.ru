@@ -122,9 +122,6 @@ AWS Basic Services:
     principle of least privilege. Cloudtrail (record everything)
     AI: SageMaker (training and deploying models) Bedrock (pretrained models)
 
-AWS Project Structure
-    aws componets: EC2, RDS, IAM, 
-    User Flow
-        -> authentication -> prompt -> callGPT api -> spotify api
-        -> save in rds
+Bidirectional Search
+    -> search both directions at the same. less than BFS, and DFS
 

@@ -1,54 +1,52 @@
-Essential Functions:
+Job Responsibilities:
 
-All functions are done as part of a coordinated team. This role will report to North Star management, but primary responsibilities and day-to-day tasks will come from the lead full stack developer. Primary responsibilities will include front and back-end development, database management, and tasks to enhance our current offerings.
+● Collaborate with the team to design and develop high quality Web applications using
 
+Python, Flask, JavaScript, Node, React, and related technologies.
 
-Frontend Development
+● Write clean and efficient code, and ensure code maintainability and reusability.
 
-Develop and maintain user-friendly web interfaces using HTML, CSS, and JavaScript.
-Ensure seamless navigation and responsiveness across various devices and browsers.
+● Perform code reviews to ensure code quality and consistency.
 
+● Conduct testing to ensure application quality and reliability.
 
-Backend Development
+● Create and maintain technical documentation for web applications.
 
-Design and implement server-side logic using PHP for robust and scalable web applications.
-Develop and maintain databases (SQL) to ensure data integrity and efficient data retrieval.
-Implement APIs for seamless communication between the front-end and back-end systems.
+● Participate in project planning, estimation, and prioritization.
 
+● Stay up to date with the latest technologies for Python and JavaScript development.
 
-Database Management
+Requirement:
 
-Design and optimize database schemas for performance and scalability.
-Write complex SQL queries for data retrieval, manipulation, and management.
-Implement and maintain database security measures to safeguard sensitive information.
-Maintain source code using SQL, PHP, JavaScript and various APIs.
-Develop documentation on dashboard maintenance
+● Experience in software development in Python3 and/or JavaScript (ES6).
 
+● Decent understanding of the software development/testing life cycle.
 
-Testing and Debugging
+● Knowledge of relational/non-relational databases (e.g. MySQL, PostgreSQL, MongoDB,
 
-Conduct thorough testing of web applications to identify and fix bugs, ensuring optimal performance.
-Debug and troubleshoot issues reported by users, providing timely resolutions.
-Communication
-Ensures that web enhancements and future additions are communicated appropriately with the firm.
+etc)
 
+● Experience with version control tools, such as Git.
 
-Continuous Learning
+Preferred Qualifications:
 
-Stay updated on industry trends and emerging technologies to enhance and broaden skill sets.
-Proactively suggest and implement improvements to current development processes.
+● Master’s Degree in Computer Science, Software Engineering, or related field.
 
+● 0 - 1 year professional experience in Python web application development with either
 
-This description covers the primary and principal duties of the job. It is not intended to give all the details or a step-by-step account of the way each procedure or task is performed.
+Flask or Django.
 
+● 0 - 1 year professional experience in JavaScript web application development with React
 
-Required Skills and Experience:
+or Node
 
-Minimum requirements in terms of educational background, work experience, licenses / certifications or other knowledge, skills and abilities.
-Bachelor’s degree in Computer Science, Information Technology, or related field.
-Relevant experience as a Full Stack Developer or similar role.
-Strong proficiency in PHP, JavaScript, HTML, CSS, and SQL.
-Experience with database management systems (e.g., MySQL, Microsoft SQL Server).
-Knowledge of version control systems.
-Excellent problem-solving and analytical skills.
-Effective communication and collaboration abilities.
+● Experience in RESTful API development in Python or Node.
+
+● Understanding of Python/JavaScript web application frameworks such as Flask or
+
+ExpressJS.
+
+● Experience with Cloud services, such as AWS.
+
+Compensation: $65,000.00 to $80,000.00 /year
+
