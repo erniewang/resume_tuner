@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llmMusic"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "openai",
+    "python-dotenv",
+    "tqdm",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "mypy",
+    "ruff",
+    "black",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*"]
+exclude = ["electronApp*", "input*", "output*", "notes*", "node_modules*"]
+

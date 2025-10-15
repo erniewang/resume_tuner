@@ -1,0 +1,16 @@
+
+ Job Description: 
+
+Strong proficiency in ReactJS, JavaScript (ES6+), HTML5, CSS3.
+
+Hands-on experience with MongoDB (CRUD operations, schema design, performance optimization).
+Proficiency in unit testing frameworks (e.g., Jest, Mocha, Jasmine, React Testing Library).
+Experience with Git or other version control systems.
+Familiarity with Agile/Scrum methodologies.
+Strong debugging, problem-solving, and analytical skills.
+Excellent communication and collaboration abilities.
+Preferred Skills:
+
+Experience with RESTful APIs and microservices architecture.
+Knowledge of CI/CD pipelines and DevOps practices.
+Exposure to cloud platforms (AWS, Azure, or GCP).

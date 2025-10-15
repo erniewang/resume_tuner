@@ -1,0 +1,27 @@
+핧
+[0] Developed a music recommendation platform integrating OpenAI's GPT API with the Spotify's Web API, enabling dynamic playlist generation from natural language queries.
+[1] Implemented relational data persistence using Amazon RDS (MySQL), storing user accounts, playlists, and historical queries to enhance personalization
+[2] Deployed backend services on Amazon EC2, handling user authentication and API communication
+[3] Designed and documented a RESTful API with endpoints for song discovery, listing favorites, history, catalog reset, and recommendation refinement.
+[4] Built sentiment analysis pipeline using OpenAI embeddings to categorize user music preferences and mood-based recommendations.
+[5] Implemented OAuth 2.0 integration with Spotify for secure user authentication and playlist management permissions.
+[6] Created Redis caching layer to optimize API response times and reduce external API calls by 60%.
+[7] Developed Node.js middleware for rate limiting and error handling to ensure stable service performance under high load.
+[8] Built comprehensive logging system using Winston to track user interactions and API performance metrics for analytics.
+핧
+[0] Evaluated and ranked outputs from Scale AI's LLM, offering detailed feedback on ethical considerations, language clarity, and visual coherence.
+[1] Ensured responses met factual accuracy standards to improve AI model performance and reliability.
+[2] Developed comprehensive evaluation rubrics and scoring systems to standardize assessment of AI-generated content across multiple domains.
+[3] Collaborated with cross-functional teams to identify bias patterns and recommend model training improvements for better ethical alignment.
+[4] Analyzed statistical trends in AI output quality using Python data analysis tools to provide actionable insights for model optimization.
+[5] Created detailed annotation guidelines and training materials for new evaluators to maintain consistency in AI training data quality.
+[6] Performed comparative analysis between different AI model versions to track improvement metrics and performance degradation patterns.
+핧
+[0] Performed with Northwestern University Jazz Orchestra (2020–2024) and in a variety of university bands, featuring both live and virtual gigs.
+[1] Utilized AI music generation tools (Musicfy, Udio) alongside custom scripts to explore digital composition and arrangement.
+[2] Conducted private lessons, teaching saxophone/clarinet fundamentals and improvisational listening skills to a broad range of students.
+[3] Developed custom Python scripts for MIDI manipulation and automated music arrangement using music21 library for compositional workflows.
+[4] Created video content and tutorials for online music education platforms, reaching over 500 students across different skill levels.
+[5] Collaborated with local recording studios to produce and engineer demo recordings for emerging artists and university music programs.
+[6] Built personal brand through social media presence and live streaming performances, growing audience engagement by 200% over two years.
+[7] Organized and led jazz masterclasses and workshops for high school music programs, focusing on improvisation and ensemble playing techniques.

@@ -1,0 +1,29 @@
+{
+  "name": "electron-react-app",
+  "version": "1.0.0",
+  "description": "A basic Electron app with React",
+  "main": "build/index.js",
+  "scripts": {
+    "build-main": "tsc --outDir build --target es2020 --module commonjs --esModuleInterop --skipLibCheck",
+    "build-renderer": "esbuild renderer.tsx --bundle --outfile=build/renderer.js --platform=browser --target=es2020 --jsx=automatic --external:electron",
+    "compile": "npm run build-main && npm run build-renderer && cp -f index.html build/",
+    "start": "npm run compile && electron ."
+  },
+  "keywords": [
+    "electron",
+    "react"
+  ],
+  "author": "ernie wang",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^38.1.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "esbuild": "^0.25.10"
+  }
+}
