@@ -4,28 +4,24 @@ var util = require("util");
 
 var spawn = require("child_process").spawn;
 // Path relative to project root (electronApp is inside project root)
-var process = spawn('python',[path.join(__dirname, '..', 'backend', 'optimize.py')]);
+//var process = spawn('python',[path.join(__dirname, '..', 'backend', 'optimize.py')]);
 
 util.log('readingin')
 
-process.stdout.on('data',function(chunk:any){
-    var textChunk = chunk.toString('utf8');// buffer to string
-    util.log(textChunk);
-});
-
 app.on('ready', () => {
-  console.log('App is ready');
-
   const win = new BrowserWindow({
-    width: 800,
+    x: 950,
+    y: 0,
+    width: 700,
     height: 600,
+    minWidth: 480,
+    minHeight: 300,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false
     }
   });
-
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
   win.loadFile(path.join(__dirname, 'index.html'));
 });
 

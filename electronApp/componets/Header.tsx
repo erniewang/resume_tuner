@@ -1,50 +1,29 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
-interface HeaderProps {
-  title: string;
-  onNavClick: (section: string) => void;
+const NAV_STYLES = "flex-none flex h-[75px] w-full justify-center space-x-4 p-4 bg-gradient-to-r from-blue-600 to-violet-600 border-b text-black";
+const BUTTON_BASE_STYLES = "px-4 py-2 rounded shadow-sm text-xl font-bold";
+
+export function Header() {
+    return (
+        <nav className={NAV_STYLES}>
+            <Link 
+                to="/" 
+                className={`${BUTTON_BASE_STYLES} bg-gradient-to-r from-emerald-400 to-cyan-400`}
+            >
+                Optimize
+            </Link>
+            <Link 
+                to="/resume-tweaks" 
+                className={`${BUTTON_BASE_STYLES} bg-gradient-to-r from-cyan-500 to-blue-500`}
+            >
+                Resume Tweaks
+            </Link>
+            <Link 
+                to="/settings" 
+                className={`${BUTTON_BASE_STYLES} bg-gradient-to-r from-fuchsia-500 to-cyan-500`}
+            >
+                Settings
+            </Link>
+        </nav>
+    );
 }
-
-export const Header: React.FC<HeaderProps> = ({ title, onNavClick }) => {
-  return (
-    <header className="header" style={{
-      backgroundColor: '#2c3e50',
-      color: 'white',
-      padding: '1rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center'
-    }}>
-      <h1 style={{ margin: 0, fontSize: '1.5rem' }}>{title}</h1>
-      <nav>
-        <button
-          onClick={() => onNavClick('home')}
-          style={buttonStyle}
-        >
-          Home
-        </button>
-        <button
-          onClick={() => onNavClick('about')}
-          style={buttonStyle}
-        >
-          About
-        </button>
-      </nav>
-    </header>
-  );
-};
-
-const buttonStyle = {
-  backgroundColor: 'transparent',
-  border: '1px solid white',
-  color: 'white',
-  padding: '0.5rem 1rem',
-  margin: '0 0.5rem',
-  cursor: 'pointer',
-  borderRadius: '4px',
-  transition: 'all 0.3s ease',
-  ':hover': {
-    backgroundColor: 'white',
-    color: '#2c3e50'
-  }
-};

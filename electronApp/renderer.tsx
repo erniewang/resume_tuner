@@ -1,27 +1,21 @@
 import { createRoot } from 'react-dom/client';
-import React, { useState } from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './componets/Header';
-import { Content } from './componets/Content';
+//pages
+import { OptimizeUI } from './pages/optimizeArea';
+import { ResumeWorkshop } from './pages/resumeCreator';
+import { TunerSettings } from './pages/settings';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
-
-  const handleNavClick = (section: string) => {
-    setActiveSection(section);
-  };
-
   return (
-    <div style={{ 
-      height: '100vh',
-      display: 'flex',
-      flexDirection: 'column'
-    }}>
-      <Header 
-        title="Electron React App" 
-        onNavClick={handleNavClick} 
-      />
-      <Content activeSection={activeSection} />
-    </div>
+    <HashRouter>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<OptimizeUI/>} />
+        <Route path="/resume-tweaks" element={<ResumeWorkshop/>} />
+        <Route path="/settings" element={<TunerSettings />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
