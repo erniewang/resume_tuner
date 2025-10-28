@@ -1,16 +1,26 @@
+ow You'll Contribute
 
- Job Description: 
+Able to write production-quality code and explain your decisions.
+Ship end-to-end product features across the Next.js App Router (Server Components, Server Actions, Route Handlers) with TypeScript strictness.
+Build AI workflows using the Vercel AI SDK (streaming text/chat, tool calls) and integrate them into robust, user-friendly experiences.
+Orchestrate background jobs/pipelines and connect external systems for data import/export.
+Model and query data with Drizzle ORM and Postgres; write safe migrations; keep schemas, types, and queries aligned with product needs.
+Own performance and reliability: streaming UIs, caching strategies, error boundaries, logging/instrumentation, and Core Web Vitals.
+Maintain code quality with type-driven design and clean abstractions; participate in constructive code reviews.
+Collaborate with product and design to scope, decompose, and deliver iterative value; document decisions in the repo’s README/docs.
 
-Strong proficiency in ReactJS, JavaScript (ES6+), HTML5, CSS3.
 
-Hands-on experience with MongoDB (CRUD operations, schema design, performance optimization).
-Proficiency in unit testing frameworks (e.g., Jest, Mocha, Jasmine, React Testing Library).
-Experience with Git or other version control systems.
-Familiarity with Agile/Scrum methodologies.
-Strong debugging, problem-solving, and analytical skills.
-Excellent communication and collaboration abilities.
-Preferred Skills:
+🧬 What Makes You a Great Fit
 
-Experience with RESTful APIs and microservices architecture.
-Knowledge of CI/CD pipelines and DevOps practices.
-Exposure to cloud platforms (AWS, Azure, or GCP).
+2+ years building in TypeScript + React and shipping Next.js (App Router, RSC, Server Actions/Route Handlers) features to production.
+Hands-on LLM/AI app experience using Vercel AI SDK or equivalent (streaming responses, function/tool calling, prompt/context design).
+Familiarity with AI dev tools (e.g., CodeX, Cursor, Claude).
+Postgres + SQL in production and experience with an ORM (Drizzle preferred).
+Experience with client-side data & caching (TanStack Query/SWR or similar).
+Proven focus on performance/reliability (streaming UIs, caching, error boundaries, logging/instrumentation, Core Web Vitals).
+Accessibility-minded UI work (Tailwind or component library experience).
+Comfortable integrating third-party APIs/webhooks and background jobs/queues.
+Bachelor’s in CS or equivalent practical experience.
+Able to thrive in a fast-paced environment.
+Learning mentality (adapts to weekly tech changes).
+Business-oriented thinking (revenue impact mindset, not just technical purity).
