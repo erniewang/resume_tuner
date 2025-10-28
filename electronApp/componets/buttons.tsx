@@ -1,41 +1,46 @@
 import React from 'react';
 
-interface ButtonProps {
-    children: React.ReactNode;
-    onClick?: () => void;
-    className?: string;
+export interface CustomButtonProps {
+    children: string;
+    height?: string;
+    bgColor?: string;
+    textColor?: string;
 }
 
-// Styled button components that only handle presentation
-export function PrimaryButton({ children, onClick, className = "" }: ButtonProps) {
-    return (
-        <button 
-            onClick={onClick}
-            className={`flex-1 px-2 py-2 text-sm font-medium text-white rounded-md bg-blue-600 transition-colors hover:bg-blue-700 ${className}`}
-        >
-            {children}
-        </button>
-    );
+export function CustomBotton({children, height, bgColor, textColor} : CustomButtonProps) {
+    const buttonHeight = height ? height : "h-auto";
+    const bg = bgColor ? bgColor : "bg-blue-500 hover:bg-blue-600";
+    const text = textColor ? textColor : "text-white";
+    return <div className={`w-full px-3 py-2 ${bg} ${text} flex flex-row 
+    justify-center items-center 
+    ${buttonHeight}
+    active:scale-95
+    transition-all duration-100
+    cursor-pointer
+    rounded-md
+    shadow-sm
+    font-medium
+    text-sm
+    `}>{children}</div>
 }
 
-export function SecondaryButton({ children, onClick, className = "" }: ButtonProps) {
-    return (
-        <button 
-            onClick={onClick}
-            className={`flex-1 px-2 py-2 text-sm font-medium text-blue-800 rounded-md bg-blue-100 transition-colors hover:bg-blue-200 ${className}`}
-        >
-            {children}
-        </button>
-    );
-}
-
-export function ActionButton({ children, onClick, className = "" }: ButtonProps) {
-    return (
-        <button 
-            onClick={onClick}
-            className={`px-3 py-2 text-sm font-medium text-blue-800 rounded-md bg-blue-50 transition-colors hover:bg-blue-100 ${className}`}
-        >
-            {children}
-        </button>
-    );
+export function CustomCheckBox({children, height, bgColor, textColor} : CustomButtonProps) {
+    const buttonHeight = height ? height : "h-auto";
+    const bg = bgColor ? bgColor : "bg-gray-100 hover:bg-gray-200";
+    const text = textColor ? textColor : "text-gray-800";
+    return <label className={`w-full px-3 py-2 ${bg} ${text} flex flex-row 
+    items-center gap-2 
+    ${buttonHeight}
+    cursor-pointer
+    rounded-md
+    shadow-sm
+    text-sm
+    transition-all duration-100
+    `}>
+        <input
+            type="checkbox"
+            name="test"
+            className="cursor-pointer"
+        />
+        {children}</label>
 }

@@ -8,4 +8,10 @@ module.exports = {
       extend: {},
     },
     plugins: [],
+    safelist: [
+      'w-1/4',
+      'w-2/4',
+      'w-3/4',
+      'w-4/4',
+    ],
   };
