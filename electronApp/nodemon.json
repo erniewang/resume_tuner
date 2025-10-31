@@ -8,11 +8,7 @@
     "index.html"
   ],
   "ext": "ts,tsx,js,jsx,css,html",
-  "ignore": [
-    "build/**/*",
-    "node_modules/**/*"
-  ],
+  "ignore": ["build/**/*", "node_modules/**/*"],
   "exec": "npm run compile && electron .",
   "delay": "500"
 }
-
