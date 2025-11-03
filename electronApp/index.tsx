@@ -21,7 +21,7 @@ app.on("ready", () => {
       contextIsolation: false,
     },
   });
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
   win.loadFile(path.join(__dirname, "index.html"));
 });
 
