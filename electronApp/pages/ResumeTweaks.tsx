@@ -4,6 +4,7 @@ import YAML from 'yaml';
 
 const file = fs.readFileSync('../input/tempProj.yaml', 'utf8');
 var yamlRawData = YAML.parse(file);
+let colorCounter = 0;
 console.log(yamlRawData);
 
 interface SectionProps {
@@ -15,6 +16,11 @@ interface SectionProps {
 
 function RenderCVSection(props: SectionProps) {
     const { fieldKey, value, combinedPath, onDelete } = props;
+    
+    // Increment counter and calculate background color - 0.5% darker each time
+    colorCounter++;
+    const bgIntensity = Math.max(255 - (colorCounter * 1), 100);
+    const bgColor = `rgb(${bgIntensity}, ${bgIntensity}, ${bgIntensity})`;
     const [descriptions, setDescriptions] = useState<string[]>([]);
     const isList = Array.isArray(value) && value.length > 1 && typeof value[0] == "string";
 
@@ -27,7 +33,7 @@ function RenderCVSection(props: SectionProps) {
     useEffect(() => {}, [descriptions]);
 
     return (
-        <div className="w-full mb-2 bg-gray-100 rounded border p-2">
+        <div className="w-full mb-2 rounded border p-2" style={{ backgroundColor: bgColor }}>
             {fieldKey.toString().length > 1 && <h3 className="font-semibold mb-2 text-lg">
                 {fieldKey.toString().charAt(0).toUpperCase() + fieldKey.toString().slice(1)}
             </h3>}
@@ -45,7 +51,7 @@ function RenderCVSection(props: SectionProps) {
                                 onDelete={() => setDescriptions(descriptions.filter((_, idx) => idx !== index))} 
                             />)}
                             <button className="w-[70px] h-[40px] bg-gray-200 rounded-lg text-xl shadow-md"
-                            onClick={() => setDescriptions(descriptions.concat([""]))}>
+                            onClick={() => setDescriptions(descriptions.concat(["                                                                                                                                                                "]))}>
                                 Add
                             </button>
                         </> :
@@ -60,7 +66,7 @@ function RenderCVSection(props: SectionProps) {
                 (value.length > 100 ? 
                     <span className="w-full flex flex-row">
                     <textarea 
-                        rows={3} 
+                        rows={2} 
                         className='w-auto flex-1 border rounded p-1' 
                         defaultValue={value}
                     />
