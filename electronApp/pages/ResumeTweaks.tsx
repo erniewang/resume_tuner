@@ -7,41 +7,44 @@ var yamlRawData = YAML.parse(file);
 
 function RenderCVSection(props: any) {
     const [key, value] = Object.entries(props)[0] as [string, any];
-    
-    // Helper to create props object from key-value pair
-    // Instead of the fucked up syntax: {...{[key]: value}}
-    const createProps = (k: string | number, v: any) => ({ [k]: v });
-
-    //pass a function that updates the state of the main div
-    const [descriptions, setDescriptions] = useState<string[]>([]);
-    //[] alone would be treated as never[] by typescript
-
     if (value === undefined) return "";
 
+    //takes in pair of objects. evaluates k and uses its value as the key
+    const createProps = (k: string | number, v: any) => ({ [k]: v });
+
+    //[] alone would be treated as never[] by typescript
+    const [descriptions, setDescriptions] = useState<string[]>([]);
+
+    const verifyListStr = (value: object) => {
+        if (Array.isArray(value) && value.length > 1 && typeof value[0] == "string") return true;
+        return false;
+    };
+
     useEffect(() => {
-        if (Array.isArray(value) && value.length > 1 && typeof value[0] == "string") {
+        if (verifyListStr(value)) {
             setDescriptions(value);
         }
     }, []); 
 
-    useEffect(() => {
-        //console.log(descriptions);
-    }, [descriptions]); 
+    useEffect(() => {}, [descriptions]); 
 
     return (
         <div className="w-full mb-2 bg-gray-100 rounded border p-2">
+            {/* Renders a name if exist. not some index*/}
             {key.length > 1 && <h3 className="font-semibold mb-2 text-lg">
                 {key.charAt(0).toUpperCase() + key.slice(1)}
             </h3>}
+
             {typeof value === "object" ? 
                 <>
                 <div className="w-full">
-                    {(Array.isArray(value) && value.length > 1 && typeof value[0] == "string") ? 
+                    { /* Renders a name if exist. not some index*/ }
+                    {(verifyListStr(value)) ? 
                         descriptions.map((desc, index) => <RenderCVSection key={index} {...createProps(index, desc)} />) :
                         Object.entries(value).map(([entryKey, entryValue]) => <RenderCVSection key={entryKey} {...createProps(entryKey, entryValue)} />)
                     }
                 </div>
-                {(Array.isArray(value) && value.length > 1 && typeof value[0] == "string") && 
+                {(verifyListStr(value)) && 
                 <button className="w-[70px] h-[40px] bg-gray-200 rounded-lg text-xl shadow-md"
                 onClick={() => setDescriptions(descriptions.concat([""]))}
                 >
@@ -66,10 +69,8 @@ function RenderCVSection(props: any) {
 }
 
 export function ResumeTweaks() {
+
     const [resumeInfo, setResumeInfo] = useState(yamlRawData.cv);
-    
-    // Helper to create props - same as the one in RenderCVSection
-    // Instead of the fucked up syntax: {...{[key]: value}}
     const createProps = (k: string, v: any) => ({ [k]: v });
     
     return (
