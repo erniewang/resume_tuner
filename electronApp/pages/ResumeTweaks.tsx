@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import fs from 'fs';
 import YAML from 'yaml';
-import { SessionData } from "react-router-dom";
 
 const file = fs.readFileSync('../input/tempProj.yaml', 'utf8');
 var yamlRawData = YAML.parse(file);
@@ -11,15 +10,11 @@ interface SectionProps {
     fieldKey: string | number;
     value: any;
     combinedPath?: string | number;
-
+    onDelete?: () => void;
 }
 
 function RenderCVSection(props: SectionProps) {
-    const { fieldKey, value, combinedPath } = props;
-
-    //fix quote spaces
-    console.log(combinedPath);
-
+    const { fieldKey, value, combinedPath, onDelete } = props;
     const [descriptions, setDescriptions] = useState<string[]>([]);
     const isList = Array.isArray(value) && value.length > 1 && typeof value[0] == "string";
 
@@ -42,27 +37,49 @@ function RenderCVSection(props: SectionProps) {
                 <div className="w-full">
                     {isList ? 
                         <>
-                            {descriptions.map((desc, index) => <RenderCVSection fieldKey={index} combinedPath={combinedPath+"."+fieldKey+"["+index+"]"} key={index} value={desc} />)}
+                            {descriptions.map((desc, index) => <RenderCVSection 
+                                fieldKey={index} 
+                                combinedPath={combinedPath+"["+index+"]"} 
+                                key={index} 
+                                value={desc}
+                                onDelete={() => setDescriptions(descriptions.filter((_, idx) => idx !== index))} 
+                            />)}
                             <button className="w-[70px] h-[40px] bg-gray-200 rounded-lg text-xl shadow-md"
                             onClick={() => setDescriptions(descriptions.concat([""]))}>
                                 Add
                             </button>
                         </> :
-                        Object.entries(value).map(([entryKey, entryValue]) => <RenderCVSection fieldKey={entryKey} combinedPath={combinedPath+"."+entryKey} key={entryKey} value={entryValue} />)
+                        Object.entries(value).map(([entryKey, entryValue]) => <RenderCVSection 
+                        fieldKey={entryKey} 
+                        combinedPath={isNaN(Number(entryKey)) ? (entryKey.includes(" ") ? combinedPath+`["${entryKey}"]` : combinedPath+"."+entryKey) : combinedPath+"["+entryKey+"]"} 
+                        key={entryKey} 
+                        value={entryValue} />)
                     }
                 </div>
                 </> : 
                 (value.length > 100 ? 
+                    <span className="w-full flex flex-row">
                     <textarea 
                         rows={3} 
-                        className='w-full border rounded p-1' 
+                        className='w-auto flex-1 border rounded p-1' 
                         defaultValue={value}
                     />
-                    : <input 
+                    {onDelete && (
+                        <button className="w-[60px] h-[30px] ml-2 bg-gray-200 rounded-lg text-md shadow-md"
+                            onClick={onDelete}
+                        >
+                            Delete
+                        </button>
+                    )}
+                    </span>
+                    : 
+                    <span className="w-full flex flex-row">
+                    <input 
                         type='text' 
-                        className='w-full border rounded p-1' 
+                        className='w-auto flex-1 border rounded p-1' 
                         defaultValue={value}
                     />
+                    </span>
                 )
             }
         </div>
