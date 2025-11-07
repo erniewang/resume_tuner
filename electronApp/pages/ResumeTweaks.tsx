@@ -16,8 +16,6 @@ interface SectionProps {
 
 function RenderCVSection(props: SectionProps) {
     const { fieldKey, value, combinedPath, onDelete } = props;
-    
-    // Increment counter and calculate background color - 0.5% darker each time
     colorCounter++;
     const bgIntensity = Math.max(255 - (colorCounter * 1), 100);
     const bgColor = `rgb(${bgIntensity}, ${bgIntensity}, ${bgIntensity})`;
@@ -30,7 +28,7 @@ function RenderCVSection(props: SectionProps) {
         }
     }, []); 
 
-    useEffect(() => {}, [descriptions]);
+    //useEffect(() => {}, [descriptions]);
 
     return (
         <div className="w-full mb-2 rounded border p-2" style={{ backgroundColor: bgColor }}>
@@ -104,3 +102,17 @@ export function ResumeTweaks() {
         </div>
     );
 }
+
+//issues
+//global and mutate every render? breaks re-rendering? strict mode?
+//IO from the jump start is a problem
+
+//proper state management?
+
+//callback through props?
+
+//extract constants
+
+//successes
+//runtime type discrimination
+//JavaScript accessor syntax
